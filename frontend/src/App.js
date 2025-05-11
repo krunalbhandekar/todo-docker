@@ -14,7 +14,7 @@ const App = () => {
   const fetchTodos = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`${SERVER_URL}/todos`);
+      const res = await axios.get(`${SERVER_URL}`);
       if (res.data.status === "error") {
         messageApi.open({
           type: "error",
@@ -38,7 +38,7 @@ const App = () => {
     }
     setLoading(true);
     try {
-      const res = await axios.post(`${SERVER_URL}/todos`, { title });
+      const res = await axios.post(`${SERVER_URL}`, { title });
       if (res.data.status === "error") {
         messageApi.open({
           type: "error",
@@ -60,7 +60,7 @@ const App = () => {
   const deleteTodo = async (id) => {
     setLoading(true);
     try {
-      const res = await axios.delete(`${SERVER_URL}/todos/${id}`);
+      const res = await axios.delete(`${SERVER_URL}/${id}`);
       if (res.data.status === "error") {
         messageApi.open({
           type: "error",
