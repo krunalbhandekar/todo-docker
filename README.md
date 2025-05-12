@@ -49,7 +49,7 @@ sudo -i
 ### 📦 Step 3: Install Dependencies
 
 ```bash
-apt update && apy install git docker.io docker-compose mysql-client -y
+apt update && apt install git docker.io docker-compose mysql-client -y
 ```
 
 ---
