@@ -78,7 +78,7 @@ USE <enter your database name, eg: todoappdocker>;
 ```
 ```bash
 CREATE TABLE todos (
-    id INT AUTO_INCREAMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL
 );
 ```
